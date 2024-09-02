@@ -13,6 +13,17 @@
         };
      </script>
 
+    <script>
+        function toggleInfo(id) {
+          var infoBox = document.getElementById(id);
+          if (infoBox.style.display === "none" || infoBox.style.display === "") {
+            infoBox.style.display = "block";
+          } else {
+            infoBox.style.display = "none";
+          }
+        }
+      </script>
+
      <style>
 * {
     margin: 0;
@@ -154,7 +165,7 @@ footer {
         <p>Oferecemos serviços de engomadoria de qualquer peça de roupa a um preço fantástico. <br> Entrega e Recolha ao domicílio. <br> (Póvoa de Santa Iria e arredores)</p>
     </section>
     <section id="about" class="about">
-        <span class="expandable" onlick="toggleInfo(infoBox1)"><button class="btn"><h2><strong>Sobre Nós</strong></h2></button></span> <br>
+        <span class="expandable" onlick="toggleInfo('infoBox1')"><button class="btn"><h2><strong>Sobre Nós</strong></h2></button></span> <br>
         <p class="infoBox" id="infoBox1">Nós somos uma empresa que nasceu em 2013 <br> e queremos satisfazer o nosso cliente através da qualidade/preço.</p>
     </section>
     <section class="price" id="price">
@@ -176,16 +187,6 @@ footer {
         <span class="expandable" onlick="toggleInfo('infoBox5')"><button class="btn"><h2><strong>Promoções</strong></h2></button></span> <br>
         <p class="infoBox" id="infoBox5">Aproveite já: 160 peças de roupa POR APENAS 60€!</p>
     </section>
-
-    <script>
-        function toggleInfo(id) {
-          var infoBox = document.getElementById(id);
-          if (infoBox.style.display === "none" || infoBox.style.display === "") {
-            infoBox.style.display = "block";
-          } else {
-            infoBox.style.display = "none";
-          }
-        }
-      </script>
+    
 </body>
 </html>
