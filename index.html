@@ -13,17 +13,6 @@
         };
      </script>
 
-    <script>
-        function toggleInfo(id) {
-          var infoBox = document.getElementById(id);
-          if (infoBox.style.display === "none" || infoBox.style.display === "") {
-            infoBox.style.display = "block";
-          } else {
-            infoBox.style.display = "none";
-          }
-        }
-      </script>
-
      <style>
 * {
     margin: 0;
@@ -64,16 +53,6 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-}
-
-.btn {
-    border: none;
-    background-color: #fff;
-}
-
-.infoBox {
-    display: none;
-    font-size: large;
 }
 
 section {
@@ -165,27 +144,27 @@ footer {
         <p>Oferecemos serviços de engomadoria de qualquer peça de roupa a um preço fantástico. <br> Entrega e Recolha ao domicílio. <br> (Póvoa de Santa Iria e arredores)</p>
     </section>
     <section id="about" class="about">
-        <span class="expandable" onlick="toggleInfo('infoBox1')"><button class="btn"><h2><strong>Sobre Nós</strong></h2></button></span> <br>
-        <p class="infoBox" id="infoBox1">Nós somos uma empresa que nasceu em 2013 <br> e queremos satisfazer o nosso cliente através da qualidade/preço.</p>
+        <h2><strong>Sobre Nós</strong></h2> <br>
+        <p>Nós somos uma empresa que nasceu em 2013 <br> e queremos satisfazer o nosso cliente através da qualidade/preço.</p>
     </section>
     <section class="price" id="price">
-        <span class="expandable" onlick="toggleInfo('infoBox2')"><button class="btn"><h2><strong>Preços</strong></h2></button></span> <br>
-        <p class="infoBox" id="infoBox2">Qualquer peça de roupa a 0.50€</p>
+       <h2><strong>Preços</strong></h2> <br>
+        <p>Qualquer peça de roupa a 0.50€</p>
     </section>
     <section class="contact" id="contact">
-        <span class="expandable" onlick="toggleInfo('infoBox3')"><button class="btn"><h2><strong>Contactos</strong></h2></button></span> <br>
-        <p class="infoBox" id="infoBox3">Email: vandacaeirocruz@sapo.pt</p> <br>
-        <p class="infoBox" id="infoBox3">Tel.: 962526818</p> <br>
-        <p class="infoBox" id="infoBox3">Facebook: <a href="https://www.facebook.com/profile.php?id=100064179274249">https://www.facebook.com/profile.php?id=100064179274249</a></p> <br>
+        <h2><strong>Contactos</strong></h2> <br>
+        <p>Email: vandacaeirocruz@sapo.pt</p> <br>
+        <p>Tel.: 962526818</p> <br>
+        <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100064179274249">https://www.facebook.com/profile.php?id=100064179274249</a></p> <br>
     </section>
     <section class="brevemente" id="brevemente">
-        <span class="expandable" onlick="toggleInfo('infoBox4')"><button class="btn"><h2><strong>--Brevemente--</strong></h2></button></span> <br>
-        <h3 class="infoBox" id="infoBox4">Costura:</h3>
-        <p class="infoBox" id="infoBox4">Ex.: Baínhas e Costura Criativa</p>
+        <h2><strong>--Brevemente--</strong></h2> <br>
+        <h3>Costura:</h3>
+        <p>Ex.: Baínhas e Costura Criativa</p>
     </section>
     <section class="promotion" id="promotion">
-        <span class="expandable" onlick="toggleInfo('infoBox5')"><button class="btn"><h2><strong>Promoções</strong></h2></button></span> <br>
-        <p class="infoBox" id="infoBox5">Aproveite já: 160 peças de roupa POR APENAS 60€!</p>
+        <h2><strong>Promoções</strong></h2><br>
+        <p>Aproveite já: 160 peças de roupa POR APENAS 60€!</p>
     </section>
     
 </body>
